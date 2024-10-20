@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from proxmox_api import ProxmoxAPI
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://proxmox_user:your_password@localhost/proxmox_manager'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://centralis_user:your_password@localhost/centralis_manager'
 db = SQLAlchemy(app)
 
 from models import Host, Cluster, TelemetryData
